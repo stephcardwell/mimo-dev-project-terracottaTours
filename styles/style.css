@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #01435A;
+  }
+
+  header {
+    display: flex;
+    background-color: #01435A;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  .blue {
+    background-color: #01435A;
+    color: white;
+    padding: 10px;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 40px;
+  }
+  
+  h1 {
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+  }
+
+  .banner button {
+    margin: 30px
+  }
+
+  .banner h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .hamburger {
+    display: none;
+   }
+
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .button {
+      padding: 7px;
+      border-radius: 10px;
+      border: solid 2px #1EC28B;
+      color: white;
+      margin-right: 40px;
+    }
+
+    .green {
+      background-color: #1EC28B;
+    }
+
+    .green-border {
+      background-color: #01435A;
+    }
+
+   .link {
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      margin: 0 30px 0 30px;
+    }
+
+   .banner {
+    background-image: url("../assets/hero.jpg");
+    height: 600px;
+    width: auto;
+    background-size: cover;
+    background-position: bottom -90px right 0;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+
+
+  h3 {
+    color: #1EC28B;
+    font-size: 20px;
+    margin: 15px;
+  }
+
+  h4 {
+    font-size: 40px;
+    padding: 5px 5px 5px 0;
+    margin: 15px;
+  }
+
+  .awards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+    margin: 50px;
+  }
+   
+  .award-text {
+    grid-area: "text";
+    line-height: 32px;
+  }
+
+  .award-text p {
+    margin: 30px 30px 30px 15px;
+    font-size: 20px;
+  }
+
+  .award-text button {
+    margin: 15px;
+    border-radius: 10px;
+    border: #1EC28B solid 2px;
+    color: #1EC28B;
+    padding: 7px;
+    font-size: 16px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .award-images {
+    grid-area: "image";
+    padding-left: 75px;
+  }
+
+  .offset {
+    display: inline-block;
+    position: relative;
+    top: -50px;
+  }
+
+
+   @media (max-width: 850px) {
+    .banner {
+      height: 400px;
+      background-size: cover;
+      background-position: bottom -60px right 0;
+    }
+
+    
+    
+
+    header {
+      display: inline-block;
+      width: 100vw;
+    }
+
+    .blue {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-text {
+      font-size: 18px;
+      margin-left: 30px;
+    }
+    
+    .navigation {
+      display: flex;
+      justify-content: space-around;
+      background-color: #4D7B8B;
+      padding: 10px 0 10px 0;
+      
+    }
+  
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-right: 15px;
+    }
+
+    span{
+    display: flex;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    }
+
+    #myNav {
+      display: none;
+    }
+
+    .button {
+      font-size: 10px;
+      padding: 5px;
+      margin: 0px;
+      
+    }
+
+    .green-border {
+      background-color: #4D7B8B;
+    }
+
+    .link {
+      font-size: 13px;
+      padding: 0;
+      margin: 0;
+    }
+  
+
+    
+ }
+
+   @media (max-width: 450px) {
+      .banner {
+        height: 200px;
+        background-size: cover;
+        background-position: bottom -30px right 0;
+      }
+
+      .banner h1 {
+        font-size: 20px;
+      }
+
+      /* .text {
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      .link {
+        font-size: 10px;
+      }
+
+      .button {
+        font-size: 10px;
+      } */
+   }
+
+
+
+
+
+
+
+
+
+  
+  /* 
+  .declaration-order {
+    // Positioning
+    // Box model
+    // Typography
+    // Visual
+    // Misc
+   
+  } */
