@@ -130,7 +130,7 @@ html {
   }
 
   .award-text p {
-    margin: 30px 30px 30px 15px;
+    margin: 30px 30px 20px 15px;
     font-size: 20px;
   }
 
@@ -152,9 +152,71 @@ html {
 
   .offset {
     display: inline-block;
-    position: relative;
-    top: -50px;
+    position: absolute;
+    top: 850px;
+    left: 900px;
+    height: 210px;
+    width: 210px;
   }
+
+  .img1 {
+    display: inline-block;
+    position: absolute;
+    top: 700px;
+    height: 233.38px;
+    width: 240px;
+  }
+
+  .img2 {
+    display: inline-block;
+    position: absolute;
+    top: 990px;
+    height: 190px;
+    width: 220px;
+  }
+
+
+
+
+
+
+
+
+
+   @media (max-width: 1050px) {
+
+    .banner {
+      height: 390px;
+      background-size: cover;
+      background-position: bottom -60px right 0;
+    }
+    
+    
+    .offset {
+      display: inline-block;
+      position: absolute;
+      top: 850px;
+      left: 800px;
+      height: 210px;
+      width: 210px;
+    }
+
+   }
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
 
 
    @media (max-width: 850px) {
@@ -164,9 +226,7 @@ html {
       background-position: bottom -60px right 0;
     }
 
-    
-    
-
+  
     header {
       display: inline-block;
       width: 100vw;
@@ -231,8 +291,67 @@ html {
       margin: 0;
     }
   
+    .awards {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+        "text text"
+        "image image";
+      margin: 50px;      
+    }
+
+    .award-text {
+      grid-area: text;
+      text-align: center;
+    }
+
+    .award-images {
+      grid-area: image;
+      padding: 0;
+      margin: 70px;
+    }
+
+    .offset {
+      display: inline-block;
+      position: absolute;
+      height: 182.86px;
+      width: 182.86px;
+      left: 450px;
+      top: 1100px;
+    }
+  
+    .img1 {
+      width: 182.86px;
+      height: 177.81px;
+      left: 275px;
+      top: 1000px;
+    }
+  
+    .img2 {
+      width: 167.62px;
+      height: 146.01px;
+      margin-top: 20px;
+      left: 250px;
+      top:1200px;
+    }
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  }
 
    @media (max-width: 450px) {
@@ -242,21 +361,38 @@ html {
         background-position: bottom -30px right 0;
       }
 
+      .awards {
+        margin: 25px;
+      }
+
       .banner h1 {
         font-size: 20px;
       }
 
-      /* .text {
-        font-size: 16px;
-        margin-left: 20px;
+      
+      .offset {
+        display: inline-block;
+        position: absolute;
+        height: 156.34px;
+        width: 156.34px;
+        left: 175px;
+        top: 1125px;
       }
-      .link {
-        font-size: 10px;
+    
+      .img1 {
+        width: 156.34px;
+        height: 152.03px;
+        left: 80px;
+        top: 1025px;
       }
-
-      .button {
-        font-size: 10px;
-      } */
+    
+      .img2 {
+        width: 143.31px;
+        height: 124.84px;
+        margin-top: 20px;
+        left: 55px;
+        top:1200px;
+      }
    }
 
 
